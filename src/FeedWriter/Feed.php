@@ -34,6 +34,7 @@ use DateTime;
  * @package     UniversalFeedWriter
  * @author      Anis uddin Ahmad <anisniit@gmail.com>
  * @link        http://www.ajaxray.com/projects/rss
+ * @version     1.0
  */
 abstract class Feed
 {
