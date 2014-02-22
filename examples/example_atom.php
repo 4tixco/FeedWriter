@@ -68,4 +68,4 @@ $newItem->setContent('<h1>hi.</h1> <p>This is the content for the entry.</p>');
 $TestFeed->addItem($newItem);
 
 //OK. Everything is done. Now generate the feed.
-$TestFeed->printFeed();
+$TestFeed->write();

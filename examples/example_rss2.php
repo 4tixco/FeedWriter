@@ -112,7 +112,7 @@ $TestFeed->addItem($newItem);
 
 // OK. Everything is done. Now generate the feed.
 // If you want to send the feed directly to the browser, use the printFeed() method.
-$myFeed = $TestFeed->generateFeed();
+$myFeed = $TestFeed->generate();
 
 // Do anything you want with the feed in $myFeed. Why not send it to the browser? ;-)
 // You could also save it to a file if you don't want to invoke your script every time.

@@ -1,7 +1,6 @@
 <?php
 namespace FeedWriter;
-
-use \DateTime;
+use DateTime;
 
 /*
  * Copyright (C) 2008 Anis uddin Ahmad <anisniit@gmail.com>
@@ -204,13 +203,13 @@ abstract class Feed
     *
     * Sets a Content-Type header and echoes the contents of the feed.
     * Should only be used in situations where direct output is desired;
-    * if you need to pass a string around, use generateFeed() instead.
+    * if you need to pass a string around, use generate() instead.
     *
     * @access   public
     * @param    bool  FALSE if the specific feed media type should be sent.
     * @return   void
     */
-    public function printFeed($useGenericContentType = false)
+    public function write($useGenericContentType = false)
     {
         $contentType = "text/xml";
 
@@ -219,7 +218,7 @@ abstract class Feed
         }
 
         header("Content-Type: " . $contentType);
-        echo $this->generateFeed();
+        echo $this->generate();
     }
 
     /**
@@ -228,7 +227,7 @@ abstract class Feed
     * @access public
     * @return string
     */
-    public function generateFeed()
+    public function generate()
     {
         return $this->makeHeader()
             . $this->makeChannels()
