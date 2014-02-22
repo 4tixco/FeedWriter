@@ -1,5 +1,5 @@
 {
-    "name": "mibe/feedwriter",
+    "name": "c9s/feedwriter",
     "description": "Generate feeds in either RSS 1.0, RSS 2.0 or ATOM formats",
     "keywords": ["RSS"],
     "homepage": "https://github.com/mibe/FeedWriter",
@@ -29,13 +29,9 @@
     ],
     "minimum-stability": "dev",
     "autoload": {
-        "classmap": [
-            "ATOM.php",
-            "Feed.php",
-            "Item.php",
-            "RSS1.php",
-            "RSS2.php"
-        ]
+        "psr-0": {
+            "FeedWriter": "src"
+        }
     }
 }
 
