@@ -1,8 +1,10 @@
 {
-    "name": "corneltek/feedwriter",
+    "name": "corneltek\/feedwriter",
     "description": "Generate feeds in either RSS 1.0, RSS 2.0 or ATOM formats",
-    "keywords": ["RSS"],
-    "homepage": "https://github.com/mibe/FeedWriter",
+    "keywords": [
+        "RSS"
+    ],
+    "homepage": "https:\/\/github.com\/mibe\/FeedWriter",
     "type": "library",
     "license": "GPL-3.0",
     "authors": [
@@ -32,6 +34,6 @@
         "psr-0": {
             "FeedWriter": "src"
         }
-    }
+    },
+    "version": "1.0.1"
 }
-
